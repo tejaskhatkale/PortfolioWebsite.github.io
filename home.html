@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tezzz Studio</title>
+    
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+            <a href="#"> <<span>TEJAS'S</span> PORTFOLIO <span>/></span></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    
+        </div>
+    </nav>
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text">Hello!  I'm  <span class="typing"></span></div>
+                <p class="text_info">A second year UnderGrad stud</p>
+            </div>
+        </div>
+    </section>
+    <!--about section-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="tezzzzzzz.png" alt="img">
+                </div>
+                <div class="column right">
+                    <div class="text">Hello!  I'm  <span class="typing"></span></div>
+                    <p class="text_info">A second year UnderGrad student studying Computer Science from
+                        JSCOE, Handewadi, Pune. I have been an Android/Web developer and have been coding for over 2 years. More Info you can contact me through contact form</p>
+                    <a href="#">About ME</a>
+               
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--service section-->
+
+    <section class="Services" id="Services">
+        <div class="max-width">
+            <h2 class="titleser">Our Services</h2>
+            <div class="services-list">
+                <div>
+                    <h2>Android Development</h2>
+                    <p>
+                        <li>Ideation and Plannings.</li>
+                        <li>Design, Development.</li>
+                        <li>App Deployment.</li>
+                        <p>BUILD AN APP WITH US!!🚀</p>
+
+                    </p>
+                </div>
+                <div>
+                    <h2>Web Development</h2>
+                    <p>
+                        <li>UI/UX design.</li>
+                        <li>WordPress development.</li>
+                        <li>Website Deployment.</li>
+                    </p>
+              
+                </div>
+                <div>
+                    <h2>Mentorship</h2>
+                    <p>
+                        <li>Roadmaps in various Domain.</li>
+                        <li> Study material.</li>
+                        <li>Providing TECH groups.</li>
+                        <li>Guidance in Hackathons, Competitions, etc</li>
+                    </p>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--skills section-->
+    <section class="Skill" id="Skill">
+        <div class="max-width">
+            <h2 class="titleskill">Skills</h2>
+            <div class="skill-list">
+                <div>
+                    <h2>Technical Skills</h2>
+                    <p>
+                        <li>android Development</li>
+                        <li>Web Development(FRONT END)</li>
+                        <li>Python, Java, Kotlin.</li>
+                        <li>HTML, CSS, JavaScript.</li>
+                    </p>
+                </div>
+                <div>
+                    <h2>Soft Skills</h2>
+                    <p>
+                        <li>Leadership</li>
+                        <li>Teamwork Skills</li>
+                        <li>Problem solving</li>
+                        <li>Video Editing</li>
+                        <li>Social media marketing</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact section-->
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="titlecon">Contact Me</h2>
+            <div class="contact-content">
+                <div class="columnleft">
+                    <form name="submit-to-google-sheet">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="Name"  placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="Email" name="Email" placeholder="Email Id" required>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <input type="text" name="Subject" placeholder="Subject" required>
+                        </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" name="Message" placeholder="Your Message" required></textarea>
+                                <div class="button">
+                                    <button type="submit">
+                                        Submit
+                                    </button>
+                                </div>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+   <script src="script.js"></script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbydWDe-NWCB2VtJhAJajRw4PNlqUVvr_E3VCjKDXhLTWVvwJbaG7U0hvvOCqzVx6FMk/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+   <!--footer section-->
+<footer class="footer">
+    <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+    <div class="social-media">
+        <a href="#" class="social"> <i class="fab fa-instagram"></i></a>
+        <a href="#" class="social"> <i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social" > <i class="fab fa-youtube"></i></a>
+        <a href="#" class="social"> <i class="fab fa-twitter"></i></a>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
+

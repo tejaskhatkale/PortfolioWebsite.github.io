@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    margin: 0%;
+}
+
+
+
+header{
+    padding: 20px;
+    text-align: center;
+    background-color:#FFBE0B;
+}
